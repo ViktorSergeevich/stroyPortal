@@ -1,0 +1,140 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  min-width: 1278px;
+  display: flex;
+  flex-direction: column;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.navigate {
+  background: #FAFBFC;
+}
+.navigate__location {
+  display: flex;
+  flex-direction: row;
+  margin: 6px 0;
+}
+.navigate__icon {
+  margin: 0 8px;
+  display: flex;
+  align-items: center;
+}
+.navigate__caption {
+  color: #708598;
+}
+.navigate__link {
+  margin-left: 24px;
+  color: #708598;
+  text-decoration: none;
+}
+.navigate__link-level::after {
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  content: "";
+  margin-left: 6.5px;
+  display: inline-block;
+  height: 10px;
+  left: 0.15em;
+  position: relative;
+  top: 0.15em;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 10px;
+  transform: rotate(135deg);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 8%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro {
+  border: 1px solid #ECEFF1;
+}
+.intro__logo {
+  margin: 14px 0;
+}
+.intro__search {
+  border: 1px solid #ECEFF1;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 526px;
+  height: 40px;
+  padding: 8px 14px;
+}
+.intro__auth {
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  background-color: #9B51E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro__auth-caption {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.button {
+  display: flex;
+  height: 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #050F19;
+  border-radius: 4px;
+  padding: 1px 16px;
+  margin: 8px 16px;
+  background-color: #FAFBFC;
+}
+.button__icon {
+  padding: 0;
+  margin-right: 10px;
+}
+.button__icon-catalog {
+  height: 20px;
+}
+.button.button-yellow {
+  background-color: #FED83D;
+}
+
+.autocomplete-results {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  height: 130px;
+  overflow: auto;
+  width: 526px;
+}
+
+.autocomplete-result {
+  list-style: none;
+  text-align: left;
+  padding: 4px 2px;
+  cursor: pointer;
+}
+
+.autocomplete-result:hover {
+  background-color: #4AAE9B;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
