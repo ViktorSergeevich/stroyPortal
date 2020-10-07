@@ -68,11 +68,11 @@
 }
 .intro__search {
   border: 1px solid #ECEFF1;
-  box-sizing: border-box;
   border-radius: 4px;
-  width: 526px;
+  width: calc(100vw / 3);
   height: 40px;
   padding: 8px 14px;
+  min-width: 260px;
 }
 .intro__auth {
   min-width: 40px;
@@ -120,21 +120,27 @@
   padding: 0;
   margin: 0;
   position: absolute;
-  height: 130px;
-  overflow: auto;
-  width: 526px;
+  border-radius: 4px;
+  background: #FAFBFC;
+  overflow: hidden;
+  width: calc(100vw / 3);
 }
 
 .autocomplete-result {
   list-style: none;
   text-align: left;
-  padding: 4px 2px;
+  padding: 8px 14px;
   cursor: pointer;
 }
 
 .autocomplete-result:hover {
   background-color: #4AAE9B;
   color: white;
+}
+
+.result-link {
+  text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
